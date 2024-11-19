@@ -1,8 +1,26 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jugdral - FE4 and 5 Wordle</title>
+        <link rel="icon" type="image/x-icon" href="./arvis.png">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        
+        <div class="game-container">
+            <h1>Jugdral Wordle</h1>
+            <h3>The answer has something to do with Fire Emblem 4 or 5</h3>
+            <div id="grid"></div>
+            <div id="message"></div>
+            <input id="input" type="text" maxlength="5" placeholder="Enter your guess">
+            <button id="submit">Submit</button>
+            <button id="try-again" style="display: none;">Try Again</button>
+        </div>
+        <div id="feedback-section" class="feedback">
+            <h3>Send Feedback (you will need to use your email)</h3>
+            <textarea id="feedback-text" placeholder="Enter your feedback here..." rows="5"></textarea>
+            <a id="send-feedback" href="#" onclick="sendFeedback()">Send Feedback</a>
+          </div>
     </body>
+    <script src="app.js"></script>
 </html>
